@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking time to help us improve the platform</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="email">Name <input id="name" type="text" name="name" placeholder="Enter your name" required></label>
+                <label id="email-label" for="email">Email <input id="email" type="email" name="email" placeholder="Enter your email" required></label>
+                <label id="number-label">Age (optional) <input id="number" type="number" name="number" placeholder="Age" min="10" max="100" required></label>
+            </fieldset>
+                <fieldset>
+                    <legend>Which option best describes your current role?</legend>
+                <select id="dropdown" name="role">
+                    <option value="""">select current role</option>
+                    <option value="1">Front-end Developer</option>
+                    <option value="2">Back-end Developer</option>
+                    <option value="3">Cloud Engineer</option>
+                </select>
+            </fieldset>
+            <fieldset class="button">
+                <legend>Would you recommend freecodecamp to a friend?</legend>
+                <label for="definitely"><input id="definitely" type="radio" name="definitely-maybe-not sure" class="inline" value="yes" checked> Definitely</label>
+                <label for="maybe"><input id="maybe" type="radio" name="definitely-maybe-not sure" class="inline" value="maybe"> Maybe</label>
+                <label for="not sure"><input id="not sure" type="radio" name="definitely-maybe-not sure" class="inline" value="no"> Not sure</label>
+            </fieldset>
+            <fieldset>
+                <legend>What is your favorite feature of freecodecamp</legend>
+                <select id="favorite" name="feature">
+                    <option value="""">Select an option</option>
+                    <option value="1">Free Learning</option>
+                    <option value="2">Learning Mode</option>
+                </select>
+            </fieldset>
+            <fieldset class="button">
+                <legend>What would you like to see improved?(Check all that apply)</legend>
+                <label for="Projects"><input id="Projects" type="checkbox" name="project" class="inline" value="response"> Front-end Projects</label>
+                <label for="Projects"><input id="Projects" type="checkbox" name="project" class="inline" value="response"> Back-end Projects</label>
+                <label for="Visualization"><input id="Visualization" type="checkbox" name="data" class="inline" value="response"> Data Visualization</label>
+                <label for="challenges"><input id="challenges" type="checkbox" name="challenges" class="inline" value="response"> Challenges</label>
+                <label for="community"><input id="community" type="checkbox" name="open source" class="inline" value="response"> Open Source Community</label>
+                <label for="rooms"><input id="rooms" type="checkbox" name="help" class="inline" value="response"> Gitter help rooms</label>
+                <label for="videos"><input id="videos" type="checkbox" name="video" class="inline" value="response"> Videos</label>
+                <label for="meetups"><input id="meetups" type="checkbox" name="city" class="inline" value="response"> City Meetups</label>
+                <label for="wiki"><input id="wiki" type="checkbox" name="wiki" class="inline" value="response"> Wiki</label>
+                <label for="forum"><input id="forum" type="checkbox" name="forum" class="inline" value="response"> Forum</label>
+                <label for="courses"><input id="courses" type="checkbox" name="Additional" class="inline" value="response"> Additional Courses</label>
+            </fieldset>
+            <fieldset>
+                <legend>Any comments or suggestions?</legend>
+                <textarea id="suggestions" type="text" rows="6" cols="30" placeholder="Enter your comment here..." class="textarea"></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+</body>
+</html>
